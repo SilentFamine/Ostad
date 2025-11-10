@@ -3,9 +3,9 @@ package org.example;
 import java.util.UUID;
 
 public class CartItem {
-    private final String productId;  // immutable unique id
-    private final String name;       // immutable
-    private final double unitPrice;  // immutable
+    private final String productId;
+    private final String name;
+    private final double unitPrice;
     private int quantity;
 
 
@@ -16,7 +16,7 @@ public class CartItem {
             throw new IllegalArgumentException("Unit price must be greater than 0.");
         }
         this.unitPrice = unitPrice;
-        this.quantity = Math.max(quantity, 0); // Ensure non-negative
+        this.quantity = Math.max(quantity, 0);
     }
 
 
